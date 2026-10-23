@@ -24,7 +24,7 @@ Aşağıdaki `rqt_graph` görselinde, Turtlesim simülatörü ile `turtle_duvar_
 
 ROS 2'nin yayıncı-abone iletişim mimarisi sayesinde kaplumbağanın konum takibi ve hareket kontrolü topic tabanlı haberleşme üzerinden gerçekleştirilmektedir.
 
-![ROS 2 RQT Graph](images/rqt_graph.png)
+![ROS 2 RQT Graph](rqt_graph.png)
 
 ### 2. Pose (Konum) Çıktısı
 
@@ -32,7 +32,7 @@ Kaplumbağanın konum bilgileri, `/turtle1/pose` konusu üzerinden alınmaktadı
 
 Aşağıdaki terminal çıktısı, kaplumbağanın simülasyon sırasındaki anlık konum ve hareket bilgilerinin izlenmesini göstermektedir.
 
-![Kaplumbağa Pose Konum Çıktısı](images/pose_output.png)
+![Kaplumbağa Pose Konum Çıktısı](pose_ciktisi.png)
 
 ### 3. Duvar Kontrolü ve Terminal Logları
 
@@ -40,13 +40,13 @@ Duvar kontrol düğümü, kaplumbağanın konumunu belirlenen sınır değerleri
 
 Terminal çıktısında `get_logger().info()` aracılığıyla kaplumbağanın anlık konumu ve sınır kontrolüne ilişkin bilgiler görüntülenebilir.
 
-![Duvar Kontrolü Terminal Çıktısı](images/wall_log.png)
+![Duvar Kontrolü Terminal Çıktısı](duvar_calismasi.png)
 
 ### 4. Turtlesim Simülasyon Hareketi
 
 Aşağıdaki görselde, kaplumbağanın Turtlesim simülasyon ekranındaki hareketi gösterilmektedir. Sistem, sınır koşullarını kontrol ederek kaplumbağanın duvarlara çarpmasını önlemeyi ve simülasyon alanında hareket etmesini amaçlamaktadır.
 
-![Turtlesim Duvarlardan Kaçan Kaplumbağa](images/turtlesim_motion.png)
+![Turtlesim Duvarlardan Kaçan Kaplumbağa](hareket.png)
 
 ### 5. Cmd Vel (Hareket Komutları) Çıktısı
 
@@ -54,7 +54,7 @@ Aşağıdaki görselde, kaplumbağanın Turtlesim simülasyon ekranındaki harek
 
 Bu mesajlarda bulunan `linear` alanı doğrusal hareket hızını, `angular` alanı ise açısal hareket hızını belirtir. Aşağıdaki terminal çıktısı, kaplumbağaya gönderilen hareket komutlarını göstermektedir.
 
-![Cmd Vel Hareket Komutları](images/cmd_vel_output.png)
+![Cmd Vel Hareket Komutları](cmd_vel_ciktisi.png)
 
 ---
 
